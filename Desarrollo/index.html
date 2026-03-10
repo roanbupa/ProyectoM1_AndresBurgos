@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="whitdh-device-width, initial-scale=1.0" />
+    <title>Generador de Paletas</title>
+
+    <!-- CSS externo (evitar estilos inline) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Generador de Paletas de Colores</h1>
+    </header>
+
+    <main>
+      <selection class="control">
+        <label for="cantidadColores">Cantidad de colores:</label>
+        <select id="candtidadColores">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5" selected>5</option>
+          <option value="6">6</option>
+        </select>
+
+        <button id="generarBtn">Generar paleta</button>
+      </selection>
+
+      <section id="paleta" class="paleta">
+        <!-- Aquí JS va a insertar los colores -->
+      </section>
+    </main>
+
+    <footer>
+      <p>Proyecto Integrador - Generador de Paletas</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
