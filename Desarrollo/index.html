@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="whitdh-device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de Paletas</title>
 
     <!-- CSS externo (evitar estilos inline) -->
@@ -14,9 +14,9 @@
     </header>
 
     <main>
-      <selection class="control">
+      <div class="control">
         <label for="cantidadColores">Cantidad de colores:</label>
-        <select id="candtidadColores">
+        <select id="cantidadColores">
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5" selected>5</option>
@@ -24,7 +24,7 @@
         </select>
 
         <button id="generarBtn">Generar paleta</button>
-      </selection>
+      </div>
 
       <section id="paleta" class="paleta">
         <!-- Aquí JS va a insertar los colores -->
