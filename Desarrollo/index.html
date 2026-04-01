@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de Paletas</title>
-
-    <!-- CSS externo (evitar estilos inline) -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,19 +13,30 @@
 
     <main>
       <div class="control">
+        <!-- Selector de cantidad de colores -->
         <label for="cantidadColores">Cantidad de colores:</label>
         <select id="cantidadColores">
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5" selected>5</option>
           <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <!-- Selector de formato de color -->
+        <label for="formatoColor">Formato de color:</label>
+        <select id="formatoColor">
+          <option value="hex" selected>HEX</option>
+          <option value="hsl">HSL</option>
         </select>
 
         <button id="generarBtn">Generar paleta</button>
       </div>
 
       <div id="paleta" class="paleta">
-        <!-- Aquí JS va a insertar los colores -->
+        <!-- Aquí JS insertará los colores -->
       </div>
     </main>
 
