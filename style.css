@@ -22,8 +22,18 @@ body {
 header {
   padding: 20px;
   text-align: center;
-  color: var(--color-secundario);
+  color: var(--color-fondo);
   position: relative;
+}
+
+/* Subrayado degradado */
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* grosor del subrayado */
   background: linear-gradient(
     135deg,
     rgba(255, 0, 0, 0.7) 0%,
@@ -66,9 +76,6 @@ main {
   align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
   justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
   font-weight: bold; /* Hace que el texto dentro del bloque se vea en negrita */
-  color: var(
-    --color-secundario
-  ); /* Aplica al texto el color definido en la variable CSS */
   cursor: pointer; /* Cambia el cursor a forma de mano cuando el mouse pasa por encima, indicando que es interactivo */
   transition:
     transform 0.3s ease,
@@ -81,6 +88,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem; /*Espacio entre columnas y filas*/
   margin-top: 2rem;
+  color: var(--color-fondo-pagina);
 }
 
 .tooltip {
@@ -105,14 +113,16 @@ main {
   /* Color primario base usando HSL */
   --color-primario: hsl(0, 0%, 0%);
   /* Color secundarimario */
-  --color-secundario: hsl(0, 0%, 98%);
+  --color-secundario: hsl(0, 0%, 81%);
   /* Fondo claro */
-  --color-fondo-pagina: hsl(0, 4%, 85%);
+  --color-fondo-pagina: hsl(0, 0%, 100%);
+  /* Letra footer */
+  --color-letra-footer: hsl(0, 95%, 33%);
 }
 
 footer {
-  background-color: var(--color-primario);
-  color: var(--color-secundario);
+  background-color: var(--color-secundario);
+  color: var(--color-letra-footer);
   padding: 1rem;
   margin-top: 2rem;
   font-size: 0.9rem;
@@ -122,4 +132,54 @@ footer {
 .color:hover {
   transform: translate(-5px); /* Eleva la tarjeta hacia arriba */
   box-shadow: 0 15px 25px var(--color-primario);
+}
+
+#generarBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  background: var(--color-letra-footer);
+  background-size: 200% 200%;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover */
+#generarBtn:hover {
+  background-position: right center;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Click */
+#generarBtn:active {
+  transform: scale(0.98);
+}
+
+#cantidadColores,
+#formatoColor {
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primario);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+}
+
+label::after {
+  content: " -";
+  color: var(--color-letra-footer);
 }
