@@ -59,7 +59,7 @@ function crearColor() {
 
   // Función para copiar el color al portapapeles
   const copiarColor = () => {
-    const colorTexto = divColor.textContent.trim(); // el texto actual del div
+    const colorTexto = divColor.textContent.trim(); // siempre toma lo que se ve en pantalla
     navigator.clipboard
       .writeText(colorTexto)
       .then(() => mostrarTooltip(divColor, "Color copiado!"))
