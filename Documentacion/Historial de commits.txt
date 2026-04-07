@@ -1,0 +1,12 @@
+Historial de commits
+
+010773e fix: mejoras HTML (footer, botón)
+e9a25c2 docs: mover README a carpeta documentacion
+df946c1 style: mejoras en header, botón y labels
+f15d590 docs: ajustes en README.md
+4524b46 fix: mover archivos a la raíz para GitHub Pages
+ffdfb2a feat: guardar cambios antes de mover archivos a root
+082cad5 style: mejoras en layout, grid y hover de colores
+1912ab4 feat: generar paleta de colores aleatoria
+6b0ce77 style: layout inicial con CSS y grid para paleta
+af1d590 feat: proyecto inicial
