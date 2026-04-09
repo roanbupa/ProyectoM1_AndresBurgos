@@ -3,9 +3,9 @@
 ## Descripción
 
 Aplicación web que permite generar paletas de colores de forma aleatoria.
-El usuario puede bloquear colores, copiarlos al portapapeles, cambiar el formato (HEX / HSL) y guardar automáticamente la paleta en el navegador.
+El usuario puede bloquear colores, copiarlos al portapapeles y cambiar el formato (HEX / HSL).
 
-Demo: https://roanbupa.github.io/ProyectoM1_AndresBurgos/
+Repositorio: https://github.com/roanbupa/ProyectoM1_AndresBurgos
 
 ---
 
@@ -19,7 +19,6 @@ Demo: https://roanbupa.github.io/ProyectoM1_AndresBurgos/
   - HEX
   - HSL
 
-- Persistencia de datos con `localStorage`
 - Accesibilidad:
   - Navegación con teclado (Enter / Space)
 
@@ -30,7 +29,6 @@ Demo: https://roanbupa.github.io/ProyectoM1_AndresBurgos/
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
-- API de `localStorage`
 
 ---
 
@@ -94,5 +92,3 @@ Sin embargo, fue necesario comprender cada implementación para poder integrarla
 ## Autor
 
 Desarrollado por **Andres Burgos**
-GitHub: https://github.com/roanbupa/ProyectoM1_AndresBurgos
-GitPages: https://roanbupa.github.io/ProyectoM1_AndresBurgos/
