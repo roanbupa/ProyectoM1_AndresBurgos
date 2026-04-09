@@ -11,36 +11,35 @@ Demo: https://roanbupa.github.io/ProyectoM1_AndresBurgos/
 
 ## Funcionalidades
 
-* Generación de colores aleatorios
-* Selección de cantidad de colores
-* Bloqueo/desbloqueo de colores (doble click)
-* Copia de colores al portapapeles
-* Soporte para formatos:
+- Generación de colores aleatorios
+- Selección de cantidad de colores
+- Bloqueo/desbloqueo de colores (doble click)
+- Copia de colores al portapapeles
+- Soporte para formatos:
+  - HEX
+  - HSL
 
-  * HEX
-  * HSL
-* Persistencia de datos con `localStorage`
-* Accesibilidad:
-
-  * Navegación con teclado (Enter / Space)
+- Persistencia de datos con `localStorage`
+- Accesibilidad:
+  - Navegación con teclado (Enter / Space)
 
 ---
 
 ## Tecnologías utilizadas
 
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-* API de `localStorage`
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+- API de `localStorage`
 
 ---
 
 ## Decisiones técnicas
 
-* Se implementó `dataset` (`data-locked`) para manejar el estado de bloqueo de cada color.
-* Se separó la lógica de generación de colores en funciones reutilizables.
-* Se implementó soporte para múltiples formatos de color (HEX y HSL).
-* Se añadieron atributos de accesibilidad (`tabIndex`, `aria-label`) para mejorar la interacción con teclado.
+- Se implementó `dataset` (`data-locked`) para manejar el estado de bloqueo de cada color.
+- Se separó la lógica de generación de colores en funciones reutilizables.
+- Se implementó soporte para múltiples formatos de color (HEX y HSL).
+- Se añadieron atributos de accesibilidad (`tabIndex`, `aria-label`) para mejorar la interacción con teclado.
 
 ---
 
@@ -76,9 +75,9 @@ Se utilizó ChatGPT como herramienta de apoyo durante el desarrollo.
 
 ### Prompts utilizados
 
-* "Cómo mantener elementos bloqueados en una lista dinámica"
-* "Cómo copiar texto al portapapeles en JavaScript"
-* "Cómo hacer accesible un elemento interactivo con teclado"
+- "Cómo mantener elementos bloqueados en una lista dinámica"
+- "Cómo copiar texto al portapapeles en JavaScript"
+- "Cómo hacer accesible un elemento interactivo con teclado"
 
 ### Aplicación de las respuestas
 
@@ -95,4 +94,5 @@ Sin embargo, fue necesario comprender cada implementación para poder integrarla
 ## Autor
 
 Desarrollado por **Andres Burgos**
-GitHub: https://github.com/roanbupa
+GitHub: https://github.com/roanbupa/ProyectoM1_AndresBurgos
+GitPages: https://roanbupa.github.io/ProyectoM1_AndresBurgos/
